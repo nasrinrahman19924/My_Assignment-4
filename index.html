@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application Tracker</title>
+
+  <!-- Tailwind + DaisyUI CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" />
+  <style>
+    *{
+        font-family: "Geist", sans-serif;
+    }
+</style>
+
+</head>
+<body class="bg-base-200 min-h-screen p-4 md:p-8">
+
+  <!-- Header / Dashboard -->
+  <header class="max-w-7xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">Job Application Tracker</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="card bg-base-100 shadow">
+        <div class="card-body bg-slate-200 text-center">
+             <p>Total</p>
+          <h2 id="totalCount" class="text-3xl font-bold">0</h2>
+        </div>
+      </div>
+
+      <div class="card bg-red-200 text-neutral shadow">
+        <div class="card-body text-center">
+             <p>Interview</p>
+          <h2 id="interviewCount" class="text-3xl text-error-content font-bold "> 0 </h2>
+        </div>
+      </div>
+
+      <div class="card bg-orange-200 text-error-content shadow">
+        <div class="card-body text-center">
+            <p>Rejected</p>
+          <h2 id="rejectedCount" class="text-3xl font-bold">0</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Jobs Section -->
+  <section class="max-w-7xl mx-auto mt-10">
+
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 gap-2">
+      <h2 class="text-2xl font-semibold">Available Jobs</h2>
+      <span id="sectionCount" class="text-3xl text-gray-500">0 Jobs</span>
+    </div>
+
+    <!-- Tabs -->
+    <div role="tablist" class="tabs tabs-boxed w-fit mb-6">
+      <a role="tab" class="tab tab-active" data-tab="all">All</a>
+      <a role="tab" class="tab" data-tab="interview">Interview</a>
+      <a role="tab" class="tab" data-tab="rejected">Rejected</a>
+    </div>
+
+    <!-- Jobs Grid -->
+    <div id="jobsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="hidden text-center py-16">
+      <div class="text-6xl mb-4">📂</div>
+      <h3 class="text-xl font-semibold">No Jobs Available</h3>
+      <p class="text-gray-500">Check back soon for new job opportunities</p>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
