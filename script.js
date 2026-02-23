@@ -7,7 +7,7 @@ const jobs = [
     type: " Remote.Full-Time",
     salary: " $130,000 - $175,000",
     description: "Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.",
-    status: "all"
+    status: "NOT APPLIED"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const jobs = [
     type: " Los Angeles, CA-Part-time",
     salary: "$80,000 - $120,000",
     description: "Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking",
-    status: "all"
+    status: "NOT APPLIED"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const jobs = [
     type: "Full-Time",
     salary: "$125,000 - $165,000",
     description: "Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.",
-    status: "all"
+    status: "NOT APPLIED"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const jobs = [
     type: " Full-time",
     salary: " $140,000 - $190,000",
     description: "Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.",
-    status: "all"
+    status: "NOT APPLIED"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const jobs = [
     type: "Full-Time",
     salary: "$110,000 - $150,000",
     description: "Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.",
-    status: "all"
+    status: "NOT APPLIED"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const jobs = [
     type: "Full-Time",
     salary: "$130,000 - $170,00",
     description: "Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.",
-    status: "all"
+    status: "NOT APPLIED"
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const jobs = [
     type: "Remote-Full-time",
     salary: "$120,000 - $160,000",
     description: "Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.",
-    status: "all"
+    status: "NOT APPLIED"
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const jobs = [
     type: "Full-Time",
     salary: "$130,000 - $175,000",
     description: "We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.",
-    status: "all"
+    status: "NOT APPLIED"
   }
 ];
 
@@ -117,6 +117,7 @@ function renderJobs() {
           <p class="text-sm text-gray-500">${job.location}</p>
           <p class="text-sm">${job.type}</p>
           <p class="text-sm font-medium">${job.salary}</p>
+          <p class="text-sm font-medium">${job.status}
           <p class="text-sm mt-2">${job.description}</p>
 
           <div class="card-actions mt-4 flex flex-wrap gap-2">
