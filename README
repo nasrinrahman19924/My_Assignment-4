@@ -1,0 +1,28 @@
+1️⃣ What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+Ans:=>
+getElementById==> IDs must be unique, selects One element by its ID and Fastest method.
+
+getElementsByClassName==> Select all the classes in the class name, updates automatically if DOM changes and Returns a live HTMLCollection.
+
+querySelector ==> Returns First matching element.
+
+querySelectorAll ==> Returns all matching element.
+
+2️⃣ How do you create and insert a new element into the DOM?
+
+Ans:=> 1. Create the Element
+       2. Add content or Attributes
+       3.Insert into the DOM like append(),appendChild() etc.
+
+3️⃣ What is Event Bubbling? How does it work?
+
+Ans:=> Event Bubbling==>Event Bubbling is when an event flows from the innermost element outward to outer container elements.
+
+Worked it==>Button event runs,Then parent event runs,Then document,Then window
+
+4️⃣ What is Event Delegation? Why is it useful?
+
+Ans:=> Event Delegation==>Event Delegation means attaching a single event listener to a parent element to handle events on its children using bubbling.
+
+Useful :->Better performance (fewer listeners),Works for dynamically added elements,Cleaner code,Memory efficient.
+
