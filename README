@@ -26,3 +26,10 @@ Ans:=> Event Delegation==>Event Delegation means attaching a single event listen
 
 Useful :->Better performance (fewer listeners),Works for dynamically added elements,Cleaner code,Memory efficient.
 
+
+5️⃣ What is the difference between preventDefault() and stopPropagation()?
+
+Ans:=>
+      preventDefault() ==> Default browser behavior.
+      
+      stopPropagation() ==> Event bubbling.
